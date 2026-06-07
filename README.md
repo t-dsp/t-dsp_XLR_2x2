@@ -95,7 +95,7 @@ To order:
 
 T-DSP is an open modular audio platform built around the Teensy microcontroller and the [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html). This board is the balanced-I/O front end — a clean 2-in/2-out XLR interface that pairs a TAC5212 codec module with a T-DSP controller over a ribbon cable.
 
-For a full desktop audio development platform with ESP32 UI, MIDI I/O, S/PDIF, RCA I/O, and multi-module TDM expansion, see the [T-DSP Desktop Pro](https://github.com/t-dsp/t-dsp_desktop_pro).
+For a full audio development platform — a 4-layer backplane pairing a Teensy 4.1, an ESP32, and the TAC5212 codec module — see the [T-DSP Core](https://github.com/t-dsp/t-dsp_core).
 
 Learn more at [t-dsp.com](https://t-dsp.com).
 
