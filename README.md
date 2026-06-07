@@ -4,14 +4,14 @@
 
 A compact carrier board (60.93mm × 26.46mm) that connects a [T-DSP TAC5212 audio module](https://github.com/t-dsp) and a [Teensy 4.1](https://www.pjrc.com/teensy/) together into a simple, USB-powered Teensy audio shield — with stereo line in/out, two onboard PDM MEMS microphones, USB Host, and SD card access.
 
-[![T-DSP TAC5212 Audio Shield Adaptor - Top Isometric](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/renders/t-dsp_tac5212_audio_shield_adaptor-3D_blender_th_top_iso.png)](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/gallery.html)
+[![T-DSP TAC5212 Audio Shield Adaptor - Top Isometric](https://t-dsp.github.io/t-dsp_XLR_2x2/renders/t-dsp_XLR_2x2-3D_blender_th_top_iso.png)](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html)
 
 | | |
 |:---:|:---:|
-| [![Top](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/renders/t-dsp_tac5212_audio_shield_adaptor-3D_blender_th_top.png)](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/gallery.html) | [![Bottom](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/renders/t-dsp_tac5212_audio_shield_adaptor-3D_blender_th_bottom.png)](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/gallery.html) |
-| [![Front](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/renders/t-dsp_tac5212_audio_shield_adaptor-3D_blender_th_front.png)](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/gallery.html) | [![Rear](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/renders/t-dsp_tac5212_audio_shield_adaptor-3D_blender_th_rear.png)](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/gallery.html) |
+| [![Top](https://t-dsp.github.io/t-dsp_XLR_2x2/renders/t-dsp_XLR_2x2-3D_blender_th_top.png)](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html) | [![Bottom](https://t-dsp.github.io/t-dsp_XLR_2x2/renders/t-dsp_XLR_2x2-3D_blender_th_bottom.png)](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html) |
+| [![Front](https://t-dsp.github.io/t-dsp_XLR_2x2/renders/t-dsp_XLR_2x2-3D_blender_th_front.png)](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html) | [![Rear](https://t-dsp.github.io/t-dsp_XLR_2x2/renders/t-dsp_XLR_2x2-3D_blender_th_rear.png)](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html) |
 
-**[View 3D Render Gallery](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/gallery.html)** -- interactive slideshow of all board views
+**[View 3D Render Gallery](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html)** -- interactive slideshow of all board views
 
 ## What It Is
 
@@ -84,7 +84,7 @@ void setup() {
 }
 ```
 
-View the design files in your browser with KiCanvas: [Schematic](https://kicanvas.org/?github=https://github.com/t-dsp/t-dsp_tac5212_audio_shield_adaptor/blob/main/t-dsp_tac5212_audio_shield_adaptor.kicad_sch) | [PCB](https://kicanvas.org/?github=https://github.com/t-dsp/t-dsp_tac5212_audio_shield_adaptor/blob/main/t-dsp_tac5212_audio_shield_adaptor.kicad_pcb)
+View the design files in your browser with KiCanvas: [Schematic](https://kicanvas.org/?github=https://github.com/t-dsp/t-dsp_XLR_2x2/blob/main/t-dsp_XLR_2x2.kicad_sch) | [PCB](https://kicanvas.org/?github=https://github.com/t-dsp/t-dsp_XLR_2x2/blob/main/t-dsp_XLR_2x2.kicad_pcb)
 
 ## Project Files
 
@@ -94,14 +94,14 @@ View the design files in your browser with KiCanvas: [Schematic](https://kicanva
 | `/lib_fp/` | Custom KiCad footprint libraries |
 | `/lib_sch/` | Custom KiCad schematic symbol libraries |
 | `/manufacturing/` | CI-generated manufacturing outputs (gerbers, BOM, pick & place, PDFs) |
-| `/pages/` | [3D Render Gallery](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/gallery.html), [Interactive BOM](https://t-dsp.github.io/t-dsp_tac5212_audio_shield_adaptor/ibom.html) |
+| `/pages/` | [3D Render Gallery](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html), [Interactive BOM](https://t-dsp.github.io/t-dsp_XLR_2x2/ibom.html) |
 
 ## Manufacturing
 
 Manufacturing files are generated automatically by [KiBot](https://github.com/INTI-CMNB/KiBot) on every push to `main` and on tagged releases via GitHub Actions.
 
 To order:
-1. Download the latest `t-dsp_tac5212_audio_shield_adaptor-manufacturing-vX.X.X.zip` from [Releases](https://github.com/t-dsp/t-dsp_tac5212_audio_shield_adaptor/releases)
+1. Download the latest `t-dsp_XLR_2x2-manufacturing-vX.X.X.zip` from [Releases](https://github.com/t-dsp/t-dsp_XLR_2x2/releases)
 2. Upload gerbers and drill files to your PCB fab (JLCPCB, PCBWay, etc.)
 3. Use the BOM and CPL files for JLCPCB SMT assembly
 

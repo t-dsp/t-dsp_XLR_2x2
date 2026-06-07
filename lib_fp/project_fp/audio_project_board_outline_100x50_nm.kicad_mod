@@ -1,0 +1,227 @@
+(footprint "audio_project_board_outline_100x50_nm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 8.12 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fc7da493-6907-424b-93f0-472160e7acf0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Board"
+		(at 53.82 -0.01 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1c8d5b7-696b-4f7f-91c1-8f4b19d478f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a4301175-41e3-4a75-b595-ba0720c9b31a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "KiKit Board annotations"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da58531a-5b13-4927-9c84-681db79fd9c8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Digikey" "-"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ca125e88-aa1a-48af-a2a3-915db28ebaa2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "-"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c852e6d-08ab-446d-8a66-98ebab55818a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "-"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1804e012-27ec-4d64-8e7f-38dd0d52ef55")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package / Case" "board"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b029981e-2754-46b2-9569-b9d7afa86a6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "mouser" "-"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8257d3bc-5758-4599-b5f4-3f93b12e0bd5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC TYPE" "PCB"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6a46409-81eb-45d1-a69f-fe901f8133ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "DNP"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "33b15089-2b21-4f42-8125-b41e39490bdd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC_MPN" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27c1d6cb-5a0e-4aa0-b817-6a7356917e86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC_Manufacturer" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5875588d-1b27-4e2e-bb47-75e01ba09f9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_bom)
+	(fp_rect
+		(start 0 -100)
+		(end 44 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "c74971cd-845e-458d-ae58-abfde34dc1b3")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d_models/Bracket 4-40 621.STEP"
+		(hide yes)
+		(offset
+			(xyz -0.325 3.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 90 90)
+		)
+	)
+	(model "${KIPRJMOD}/3d_models/Bracket 4-40 621.STEP"
+		(hide yes)
+		(offset
+			(xyz 100 3.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 90 0)
+		)
+	)
+	(model "${KIPRJMOD}/3d_models/Bracket 4-40 621.STEP"
+		(hide yes)
+		(offset
+			(xyz 0.175 147.06 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/3d_models/Bracket 4-40 621.STEP"
+		(hide yes)
+		(offset
+			(xyz 100.675 146.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 90 0)
+		)
+	)
+)

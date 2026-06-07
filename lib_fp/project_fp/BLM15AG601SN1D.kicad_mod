@@ -9,7 +9,7 @@
 		(at 0.22 -1.26 180)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "181e67ca-69e8-4b00-8b9f-6424e2e5d33a")
+		(uuid "c04f429c-be4d-40bc-9c22-800855340dc8")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -21,7 +21,7 @@
 		(at 0 0 180)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "48dafebf-ae8b-432b-977a-0e97dfa7a88d")
+		(uuid "2e44e3ce-a666-44d3-b479-9fc45733981a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33,7 +33,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "dda6cfd8-32c6-4d1b-a044-f7b04ad1cf7a")
+		(uuid "f3e0ebda-44de-475f-b153-a3cb2f0bff02")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -45,7 +45,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a67f98a7-67e1-47d0-923f-4e8fd6d60ee9")
+		(uuid "0ad7c4f6-f3e1-4b38-949a-fa0f61624ab5")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,7 +58,59 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "159f8979-7fd2-48a3-9e9f-4eb042cbec92")
+		(uuid "8382fa1b-30ae-4a78-84d3-1d27a4a577b9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC TYPE" "SMD"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1567dc3a-bd6c-4f43-b354-efeed9f282d4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC_MPN" "BLM15AG601SN1D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8ca2a69c-b92a-4b15-8a58-974c892a1616")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC_Manufacturer" "muRata"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e90bc0fd-fe4c-4756-9c5e-9307e2953055")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package / Case" "0402"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4e94127a-ee92-41a3-ad4c-594af4c90545")
 		(effects
 			(font
 				(size 1 1)
@@ -75,7 +127,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d7af1502-daf7-45d2-9969-2625d85ce517")
+		(uuid "9c169257-3aea-4c0f-a834-a6d3db19980e")
 	)
 	(fp_line
 		(start -1.175 -0.7)
@@ -85,7 +137,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "4afb1ed6-7487-4695-b507-43ecd86ea365")
+		(uuid "749d5c19-91cd-424f-8aba-663730635623")
 	)
 	(fp_line
 		(start -1.175 0.7)
@@ -95,7 +147,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "aaa3830a-5f4a-4bfc-b79d-68cf7aa5ae11")
+		(uuid "561215a8-2a24-4c05-ba0d-7b39c4f35e9b")
 	)
 	(fp_line
 		(start 1.175 -0.7)
@@ -105,7 +157,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "90ae0958-cb48-4af2-ad9d-694c64b5e7e3")
+		(uuid "02b535cd-78b1-462a-a9ba-aadcffb1753a")
 	)
 	(fp_line
 		(start 1.175 0.7)
@@ -115,7 +167,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "d346359b-171d-4821-afff-0a269fd214aa")
+		(uuid "debf9f45-a2a3-44b3-8c2f-73c1552b9cd7")
 	)
 	(fp_line
 		(start -0.5 -0.25)
@@ -125,7 +177,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "05fd56ec-c9ae-4730-ac8b-08097401b97c")
+		(uuid "ff889e60-1918-4c5b-991a-399d6ab4ca84")
 	)
 	(fp_line
 		(start -0.5 0.25)
@@ -135,7 +187,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "595e6a8d-f0db-42a2-8daa-b24e0d217bf1")
+		(uuid "2f3d8637-daf9-441c-a2ef-461f34c6b143")
 	)
 	(fp_line
 		(start 0.5 -0.25)
@@ -145,7 +197,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "8c7813d2-e415-49a9-87f5-ef269a77f072")
+		(uuid "97d7d5ad-e01a-4069-9740-b3f9205b3fa7")
 	)
 	(fp_line
 		(start 0.5 0.25)
@@ -155,19 +207,19 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "03dbabf2-8220-4ec9-a62a-6cf527744767")
+		(uuid "0baacfc5-2f19-4eea-8ff5-0e21c4da9f10")
 	)
 	(pad "1" smd rect
 		(at -0.4 0)
 		(size 0.4 0.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "3e591f8c-54f3-4be2-9cda-2655e6100b94")
+		(uuid "697e3449-59fe-4ce1-82bf-62c0714a8dd0")
 	)
 	(pad "2" smd rect
 		(at 0.4 0)
 		(size 0.4 0.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "81e47570-067d-4f1a-8fe9-4a1383a4f3fc")
+		(uuid "9b3eafbe-0fee-419a-a327-114ae1b72791")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/3d_models/BLM15AG601SN1D.stp"

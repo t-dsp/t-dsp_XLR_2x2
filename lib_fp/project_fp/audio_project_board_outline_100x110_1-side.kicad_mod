@@ -1,4 +1,4 @@
-(footprint "audio_project_board_outline_100x120"
+(footprint "audio_project_board_outline_100x110_1-side"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -124,17 +124,6 @@
 	)
 	(attr dnp)
 	(fp_rect
-		(start -0.025 -100)
-		(end 6.375 -91.29)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "904dd0a2-c59f-4462-90d8-230f8804c32e")
-	)
-	(fp_rect
 		(start -0.025 -8.71)
 		(end 6.375 0)
 		(stroke
@@ -146,8 +135,8 @@
 		(uuid "e1d107a7-b275-4a44-b3c1-f686daedbed0")
 	)
 	(fp_rect
-		(start 113.625 -8.71)
-		(end 120.025 0)
+		(start 103.625 -8.71)
+		(end 110.025 0)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -157,36 +146,15 @@
 		(uuid "ef2520bb-944a-4b1d-a288-e1645637962b")
 	)
 	(fp_rect
-		(start 120.025 -91.284)
-		(end 113.625 -99.994)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "58fa0085-ac2d-48ab-bf89-464b6a291754")
-	)
-	(fp_rect
 		(start 0 -100)
-		(end 120 0)
+		(end 110 0)
 		(stroke
 			(width 0.05)
-			(type default)
+			(type solid)
 		)
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "1d1efb76-49b3-4f57-bea0-3125fced1657")
-	)
-	(fp_line
-		(start 3.175 -94.84)
-		(end 3.175 -100)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.1")
-		(uuid "21e0670a-fecb-4968-8ff8-6952a5d2ebfe")
 	)
 	(fp_line
 		(start 3.175 -5.16)
@@ -199,18 +167,8 @@
 		(uuid "4259d5e3-c2e0-4e88-a86d-e37b735a7971")
 	)
 	(fp_line
-		(start 116.825 -94.834)
-		(end 116.825 -99.994)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.1")
-		(uuid "70ec897d-6eec-4faa-9fd1-eae71efcc44a")
-	)
-	(fp_line
-		(start 116.825 -5.16)
-		(end 116.825 0)
+		(start 106.825 -5.16)
+		(end 106.825 0)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -232,23 +190,10 @@
 		)
 	)
 	(fp_text user ".343\" (short)"
-		(at 121.855 0.05 90)
+		(at 111.855 0.05 90)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "925145a5-a712-4655-bddd-d32d432805f6")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
-	(fp_text user ".343\" (short)"
-		(at 111.795 -100.044 270)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "b04c0e62-63fe-4b57-98e3-0f84218b2b30")
 		(effects
 			(font
 				(size 1 1)
@@ -275,7 +220,7 @@
 		(layer "F.SilkS")
 		(uuid "55d3eb2a-6c40-48e7-b274-91caca300e61")
 		(pts
-			(xy 116.825 -5.16) (xy 120 0)
+			(xy 106.825 -5.16) (xy 110 0)
 		)
 		(height 6.96)
 		(orientation 0)
@@ -297,7 +242,7 @@
 			(keep_text_aligned yes)
 		)
 		(gr_text "3.175"
-			(at 118.4125 0.7 0)
+			(at 108.4125 0.7 0)
 			(layer "F.SilkS")
 			(uuid "55d3eb2a-6c40-48e7-b274-91caca300e61")
 			(effects
@@ -307,58 +252,6 @@
 				)
 			)
 		)
-	)
-	(pad "B1" thru_hole circle
-		(at 3.175 -94.84 90)
-		(size 3.45 3.45)
-		(drill 2.45)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "0dbde279-e7fa-4f0e-ad16-c58a77b8407b")
-	)
-	(pad "B1" smd custom
-		(at 3.175 -94.84 90)
-		(size 3.45 3.45)
-		(layers "F.Cu" "F.Mask")
-		(options
-			(clearance outline)
-			(anchor circle)
-		)
-		(primitives
-			(gr_rect
-				(start -3.55 -3.2)
-				(end 5.16 3.2)
-				(width 0.1)
-				(fill yes)
-			)
-		)
-		(uuid "30582e05-b56b-4912-8226-b5f763d46c9f")
-	)
-	(pad "B2" thru_hole circle
-		(at 116.825 -94.834 90)
-		(size 3.45 3.45)
-		(drill 2.45)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "f9e90711-3827-46c1-a876-83ac969ea0b3")
-	)
-	(pad "B2" smd custom
-		(at 116.825 -94.834 90)
-		(size 3.45 3.45)
-		(layers "F.Cu" "F.Mask")
-		(options
-			(clearance outline)
-			(anchor circle)
-		)
-		(primitives
-			(gr_rect
-				(start -3.55 -3.2)
-				(end 5.16 3.2)
-				(width 0.1)
-				(fill yes)
-			)
-		)
-		(uuid "262b405f-cbe4-412c-ab83-3f841c331047")
 	)
 	(pad "B3" thru_hole circle
 		(at 3.175 -5.16 270)
@@ -387,7 +280,7 @@
 		(uuid "29339d7f-8a4e-44cc-9734-71b8b785bcf8")
 	)
 	(pad "B4" thru_hole circle
-		(at 116.825 -5.16 270)
+		(at 106.825 -5.16 270)
 		(size 3.45 3.45)
 		(drill 2.45)
 		(layers "*.Cu" "*.Mask")
@@ -395,7 +288,7 @@
 		(uuid "9b8c438c-42b6-4b08-a865-ba5c5ab12713")
 	)
 	(pad "B4" smd custom
-		(at 116.825 -5.16 270)
+		(at 106.825 -5.16 270)
 		(size 3.45 3.45)
 		(layers "F.Cu" "F.Mask")
 		(options
@@ -411,12 +304,6 @@
 			)
 		)
 		(uuid "6719d83b-f183-4a5d-a198-0e47711ac3d4")
-	)
-	(group ""
-		(uuid "5760ed98-3e9e-426a-b0f5-b88eebbdb08a")
-		(members "262b405f-cbe4-412c-ab83-3f841c331047" "58fa0085-ac2d-48ab-bf89-464b6a291754"
-			"b04c0e62-63fe-4b57-98e3-0f84218b2b30" "f9e90711-3827-46c1-a876-83ac969ea0b3"
-		)
 	)
 	(group ""
 		(uuid "a886439d-2ed7-4610-91ee-374ec14bf4ac")
@@ -444,7 +331,7 @@
 	)
 	(model "${KIPRJMOD}/3d_models/Bracket 4-40 621.STEP"
 		(offset
-			(xyz 117 0.175 0)
+			(xyz 107 0.175 0)
 		)
 		(scale
 			(xyz 1 1 1)
@@ -454,6 +341,7 @@
 		)
 	)
 	(model "${KIPRJMOD}/3d_models/Bracket 4-40 621.STEP"
+		(hide yes)
 		(offset
 			(xyz 116.65 99.825 0)
 		)
@@ -465,6 +353,7 @@
 		)
 	)
 	(model "${KIPRJMOD}/3d_models/Bracket 4-40 621.STEP"
+		(hide yes)
 		(offset
 			(xyz 3.5 99.825 0)
 		)

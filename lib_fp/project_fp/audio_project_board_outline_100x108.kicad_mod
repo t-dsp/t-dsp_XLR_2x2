@@ -1,4 +1,4 @@
-(footprint "audio_project_board_outline_100x120"
+(footprint "audio_project_board_outline_100x108"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -169,10 +169,10 @@
 	)
 	(fp_rect
 		(start 0 -100)
-		(end 120 0)
+		(end 108 0)
 		(stroke
 			(width 0.05)
-			(type default)
+			(type solid)
 		)
 		(fill no)
 		(layer "Edge.Cuts")

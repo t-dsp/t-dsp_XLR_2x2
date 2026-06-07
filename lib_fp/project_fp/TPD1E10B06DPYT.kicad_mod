@@ -5,11 +5,11 @@
 	(layer "F.Cu")
 	(descr "DPY (R-PX1SON-N2)")
 	(tags "TVS Diode (Bi-directional)")
-	(property "Reference" "D**"
+	(property "Reference" "REF**"
 		(at 0.3 -1.6 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "c20b662a-4be0-40ef-aede-d3142dee0cf9")
+		(uuid "56dcea8b-50ce-4429-87dd-1a9b82d1a7a3")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17,11 +17,11 @@
 			)
 		)
 	)
-	(property "Value" "DPY(R-PX1SON-N2)"
+	(property "Value" "TPD1E10B06DPYT"
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "e8714a4c-fac8-4ea0-ab92-394a8f49e03d")
+		(uuid "42e90a18-c263-4510-9c55-a9415aa9f8cb")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29,11 +29,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a4102bf2-8994-4469-8000-caa73fa4b0f5")
+		(uuid "d3cb22a7-2f7c-40b6-9f0c-4dd424d8d122")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -41,14 +41,79 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "12.5VC Clamp ESD DIODE DFN1006-2"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "02ef842c-b4dd-437e-88ac-4e9969c82f00")
+		(uuid "40079fea-7eab-40fc-b98d-fd124e12abfd")
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C5155810"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d93145cd-113e-42d5-a7c6-3a6977fe4dcf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC_MPN" "TPD1E10B06DPYT"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1f5a6cc2-21e9-43e3-b520-9fd25286e946")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC_Manufacturer" "Leiditech"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a6799ef7-d5f8-4605-90e4-83c0f558c12a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package / Case" "DFN1006-2"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c2179b1-0924-4ba2-8dec-d52f1f305608")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC TYPE" "SMD"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2a5e8cd0-eff0-4526-8c9b-11e80adfa010")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -62,7 +127,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "e2ce8e68-fb4f-4f98-b293-8eda0052ca8e")
+		(uuid "42e343b3-ab8e-4a60-8a62-88416baa633a")
 	)
 	(fp_line
 		(start -0.55 0.35)
@@ -72,7 +137,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "6e713616-f431-445d-abe4-ca39f7b7ea36")
+		(uuid "78b75c5b-ee75-4221-b3e9-9e17cd485dbd")
 	)
 	(fp_line
 		(start -0.55 -0.35)
@@ -82,7 +147,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6cdb165f-4ad3-4e55-ae70-c8532cf9e2c0")
+		(uuid "1074d618-9d76-47ea-83d2-49f12d2d497e")
 	)
 	(fp_line
 		(start -0.55 0.35)
@@ -92,7 +157,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "3aa4565d-b258-48ce-89dc-ee9d3a1085fe")
+		(uuid "70f07a46-74bc-4f29-975a-ab5e8377e0b6")
 	)
 	(fp_line
 		(start 0.55 -0.35)
@@ -102,7 +167,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "ee2e2eba-72ac-41bc-91ac-b617c96b9fed")
+		(uuid "6c49b6f7-2b08-4c21-bd03-7323840612da")
 	)
 	(fp_line
 		(start 0.55 0.35)
@@ -112,12 +177,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "625a110b-aee0-45a3-bc5e-30bce0c8f086")
+		(uuid "013582cd-37b0-41d7-858c-b33d5d29dc7b")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0.1 -1.4 0)
 		(layer "F.Fab")
-		(uuid "e271eb74-fcd1-4b05-bafa-5aeee7d89cef")
+		(uuid "b1c5457f-f6e2-4a49-9bed-16f186673b67")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -129,13 +194,13 @@
 		(at -0.5 0 90)
 		(size 0.5 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "b6159c11-8f95-44de-b049-f8d47e3f1c25")
+		(uuid "386d8a65-9cb2-4251-811a-6e7e67ce0b7d")
 	)
 	(pad "2" smd rect
 		(at 0.5 0 90)
 		(size 0.5 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "a867381b-5784-4f95-9264-7f30644cbae2")
+		(uuid "b798e654-4890-4d09-99d2-a734d9cec115")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/3d_models/TPD1E10B06DPYT.stp"

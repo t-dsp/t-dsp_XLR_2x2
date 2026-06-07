@@ -1,0 +1,64 @@
+(footprint "Wire_Tie_1"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
+	(tags "Through hole pin header THT 1x01 1.00mm single row")
+	(property "Reference" "REF**"
+		(at 0.6858 11.5824 0)
+		(layer "F.Fab")
+		(uuid "e6cfefee-7d6d-40c7-a978-a6317deed981")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.18)
+			)
+		)
+	)
+	(property "Value" "Conn_01x01_Male"
+		(at 0.5334 13.0302 180)
+		(layer "F.Fab")
+		(uuid "3e820681-013c-45f1-baeb-14d8fa06f956")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0416d0a4-b994-4a7f-a510-09b15acdcc77")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d92585c8-f9f3-479d-bfc6-71e346fbea93")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 4 1.5)
+		(drill oval 4 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9a1ffd6b-a22a-43e7-8f19-cbc9dbc6b34d")
+	)
+	(embedded_fonts no)
+)

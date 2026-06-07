@@ -7,7 +7,8 @@
 	(property "Reference" "REF**"
 		(at 0.5 1 0)
 		(layer "F.SilkS")
-		(uuid "0422fada-f622-4487-b077-aded61356cb8")
+		(hide yes)
+		(uuid "0f1b019e-2026-418e-b101-4538398b250a")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -18,7 +19,8 @@
 	(property "Value" "jumper"
 		(at 0.5 -2.5 0)
 		(layer "F.Fab")
-		(uuid "2c8beb21-cf89-4a22-ba85-186dd7f70c04")
+		(hide yes)
+		(uuid "b82b643d-8cfe-4365-8265-382be62a5026")
 		(effects
 			(font
 				(size 1 1)
@@ -30,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6ac01f3c-6eaa-4664-a536-63d55b3568fe")
+		(uuid "0329242b-7050-4dac-abf0-a009877d965d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +44,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "88b8a16e-b2d0-4d94-874d-361cc971c258")
+		(uuid "eefb50ba-965c-4518-a526-0c9681a0d73d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -54,7 +56,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b657ff56-e080-411f-a6b7-38e3b280e693")
+		(uuid "a17f5a69-d115-4b23-9d42-eea44e05134e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -66,7 +68,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3173ebc6-d031-42dd-9a3a-752210ea0d44")
+		(uuid "00ce01d0-4119-415a-b393-f50c2fe74294")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -78,7 +80,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6d3aa0da-7860-4497-8bda-181016740fa4")
+		(uuid "0c2a206f-db1a-4992-a62b-8932111604f0")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -90,7 +92,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "27ae8fbf-15d9-4c9c-b409-21bb58bc5d80")
+		(uuid "4a405b35-1ffa-4154-a996-6cdc563f8ace")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -102,7 +104,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7aa0b5ba-34f4-4887-a1fb-ddb864f4aaea")
+		(uuid "ff561c28-e025-41a0-a5fc-a8a55d1da070")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -114,7 +116,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "20938364-1b3c-4fcd-80e0-516453f35aa6")
+		(uuid "fca2dfad-f6a9-4957-b493-4df1a431f954")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -122,7 +124,7 @@
 			)
 		)
 	)
-	(attr smd exclude_from_bom allow_soldermask_bridges)
+	(attr smd allow_soldermask_bridges)
 	(net_tie_pad_groups "1, 2")
 	(fp_poly
 		(pts
@@ -134,19 +136,19 @@
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "1d4b3101-069e-4fbf-b361-c50a35b31698")
+		(uuid "158a1f2e-7773-450f-84d1-cd99f612dd95")
 	)
 	(pad "1" smd rect
 		(at -0.5 0)
 		(size 0.508 0.508)
 		(layers "F.Cu" "F.Mask")
-		(uuid "ad5f1042-ce2f-4c75-8d06-7ed11ad7cae9")
+		(uuid "0831a741-5723-4e12-bf17-71644e0b6dd0")
 	)
 	(pad "2" smd rect
 		(at 0.5 0)
 		(size 0.508 0.508)
 		(layers "F.Cu" "F.Mask")
-		(uuid "158b8b9e-b8e7-4085-bb0f-e85a7c1a7349")
+		(uuid "1f7dd659-6e4c-4686-858f-4f0cf23964a0")
 	)
 	(embedded_fonts no)
 )
