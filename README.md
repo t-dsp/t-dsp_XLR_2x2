@@ -1,10 +1,10 @@
-# T-DSP TAC5212 Audio Shield Adaptor for Teensy 4.1
+# T-DSP XLR 2×2 — Balanced XLR I/O Board
 
 **Part of the [T-DSP](https://t-dsp.com) open modular audio platform.**
 
-A compact carrier board (60.93mm × 26.46mm) that connects a [T-DSP TAC5212 audio module](https://github.com/t-dsp) and a [Teensy 4.1](https://www.pjrc.com/teensy/) together into a simple, USB-powered Teensy audio shield — with stereo line in/out, two onboard PDM MEMS microphones, USB Host, and SD card access.
+A simple balanced-audio I/O board: **two XLR inputs and two XLR outputs** for pro line-level signals. It hosts a [T-DSP TAC5212 pro audio module](https://github.com/t-dsp/t-dsp_tac5212_pro_audio_module), which handles the entire analog signal path. Audio and control (I2S + I2C) are carried over a ribbon cable to a separate [T-DSP](https://t-dsp.com) controller module — this board has no microcontroller of its own.
 
-[![T-DSP TAC5212 Audio Shield Adaptor - Top Isometric](https://t-dsp.github.io/t-dsp_XLR_2x2/renders/t-dsp_XLR_2x2-3D_blender_th_top_iso.png)](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html)
+[![T-DSP XLR 2x2 - Top Isometric](https://t-dsp.github.io/t-dsp_XLR_2x2/renders/t-dsp_XLR_2x2-3D_blender_th_top_iso.png)](https://t-dsp.github.io/t-dsp_XLR_2x2/gallery.html)
 
 | | |
 |:---:|:---:|
@@ -15,41 +15,44 @@ A compact carrier board (60.93mm × 26.46mm) that connects a [T-DSP TAC5212 audi
 
 ## What It Is
 
-This is the simplest board in the T-DSP ecosystem. It is an **adaptor** — a small carrier PCB that brings together two modules:
+This is a **balanced I/O carrier** for the T-DSP ecosystem. It exposes four panel-mount Neutrik XLR connectors and gives a [TAC5212 pro audio module](https://github.com/t-dsp/t-dsp_tac5212_pro_audio_module) a home:
 
-- **[T-DSP TAC5212 module](https://github.com/t-dsp)** — the pro audio codec daughter board (plugs into the adaptor via headers)
-- **[Teensy 4.1](https://www.pjrc.com/teensy/)** — ARM Cortex-M7 running the [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html)
+- **2× XLR inputs** — balanced, pro line level, into the TAC5212 ADC
+- **2× XLR outputs** — balanced, pro line level, from the TAC5212 DAC
+- **TAC5212 module socket** — the codec daughter board mounts here and does all the analog work
+- **Ribbon link** — I2S audio, I2C control, and power travel over a single 2×10 ribbon cable to the host controller
 
-The result is a compact, bus-powered audio shield with stereo line I/O, two MEMS microphones, USB Host, and SD card access — no external power supply required.
+There is no microcontroller, DSP, or power supply on this board. It is purely the analog front panel: connectors, the codec module, and the cable to the brains.
 
-## What You Need
+## How It Fits Together
 
-| Item | Notes |
-|------|-------|
-| T-DSP TAC5212 audio module | Plugs into the adaptor's module connector |
-| Teensy 4.1 | Socketed onto the adaptor's Teensy headers |
-| This adaptor PCB | The carrier board documented here |
+```
+  XLR in  ─┐                                  ┌─ I2S (audio)
+  XLR in  ─┼─►  TAC5212 module  ◄────ribbon───┼─ I2C (control)   ►  T-DSP controller
+  XLR out ─┤      (this board)                └─ power              (Teensy-based)
+  XLR out ─┘
+```
 
-Power comes from the Teensy 4.1's USB connector — no external supply needed.
+The controller module runs the firmware and clocks; this board provides the balanced analog I/O and the codec that converts it.
 
 ## Features
 
 ### Audio I/O
-- **Stereo line input** -- via the TAC5212 module's ADC
-- **Stereo line output** -- via the TAC5212 module's DAC
-- **2× PDM MEMS microphones** -- Knowles SPK0641HT4H-1, speakerphone-grade, for voice capture or stereo room mics
+- **2× balanced XLR input** — female XLR (Neutrik NC3FAH2), into the TAC5212 ADC
+- **2× balanced XLR output** — male XLR (Neutrik NC3MAH), from the TAC5212 DAC
+- Pro line-level signal path, handled entirely by the TAC5212 module
 
 ### Connectivity
-- **USB Host** -- USB-A host port for MIDI controllers, USB storage, and USB audio devices
-- **SD card** -- Accessible via the Teensy 4.1's built-in SD slot
+- **TAC5212 module socket** — hosts the [T-DSP TAC5212 pro audio module](https://github.com/t-dsp/t-dsp_tac5212_pro_audio_module)
+- **2×10 ribbon header** — carries I2S, I2C, and power to/from a T-DSP controller module
 
 ### Power
-- **USB via Teensy 4.1** -- Bus-powered from the Teensy's USB port; no additional power input on this board
+- Supplied from the host controller over the ribbon cable — no power input on this board
 
 ## Board Design
 
-- **60.93mm × 26.46mm** PCB
-- Designed around the T-DSP audio module board outline standard
+- **100 mm × 44 mm** PCB
+- Built around the T-DSP audio module board-outline standard (50 × 34.5 mm module footprint)
 - The TAC5212 module handles the entire analog signal path
 - KiCad source files, full BOM, and CI-generated manufacturing outputs included
 - Open source under CC BY-NC-SA 4.0
@@ -58,31 +61,14 @@ Power comes from the Teensy 4.1's USB connector — no external supply needed.
 
 ### Hardware
 
-1. Solder pin headers on your **Teensy 4.1** (if not already done)
-2. Socket the Teensy 4.1 into the adaptor board headers
-3. Plug the **TAC5212 module** into its connector on the adaptor
-4. Connect your line-level audio source and output to the TAC5212 module's jacks
-5. Connect USB to the Teensy 4.1 for power and optionally USB Audio
+1. Mount the **TAC5212 pro audio module** onto this board's module socket
+2. Wire the four panel-mount **XLR connectors** (2 in, 2 out)
+3. Connect the **2×10 ribbon cable** between this board and your T-DSP controller module
+4. Power and clocks are provided by the controller over the ribbon — no separate supply needed
 
 ### Firmware
 
-Use the [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html) with the TAC5212 codec driver. Design your audio graph using PJRC's [Audio System Design Tool](https://www.pjrc.com/teensy/gui/).
-
-```cpp
-#include <Audio.h>
-#include <Wire.h>
-
-AudioInputI2S         audioIn;
-AudioOutputI2S        audioOut;
-AudioControlTAC5212   codec;
-
-void setup() {
-  AudioMemory(12);
-  codec.enable();
-  codec.inputSelect(AUDIO_INPUT_LINEIN);
-  codec.volume(0.8);
-}
-```
+The TAC5212 codec is configured and clocked by the **host controller module**, not by this board. See [t-dsp_software](https://github.com/t-dsp/t-dsp_software) for the firmware that drives the codec over I2C and streams audio over I2S.
 
 View the design files in your browser with KiCanvas: [Schematic](https://kicanvas.org/?github=https://github.com/t-dsp/t-dsp_XLR_2x2/blob/main/t-dsp_XLR_2x2.kicad_sch) | [PCB](https://kicanvas.org/?github=https://github.com/t-dsp/t-dsp_XLR_2x2/blob/main/t-dsp_XLR_2x2.kicad_pcb)
 
@@ -101,13 +87,13 @@ View the design files in your browser with KiCanvas: [Schematic](https://kicanva
 Manufacturing files are generated automatically by [KiBot](https://github.com/INTI-CMNB/KiBot) on every push to `main` and on tagged releases via GitHub Actions.
 
 To order:
-1. Download the latest `t-dsp_XLR_2x2-manufacturing-vX.X.X.zip` from [Releases](https://github.com/t-dsp/t-dsp_XLR_2x2/releases)
+1. Download the latest `t-dsp_XLR_2x2-manufacturing-vX.X.zip` from [Releases](https://github.com/t-dsp/t-dsp_XLR_2x2/releases)
 2. Upload gerbers and drill files to your PCB fab (JLCPCB, PCBWay, etc.)
 3. Use the BOM and CPL files for JLCPCB SMT assembly
 
 ## About T-DSP
 
-T-DSP is an open modular audio platform built around the Teensy microcontroller and the [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html). This adaptor is the simplest entry point — a small carrier that turns a Teensy 4.1 and a TAC5212 module into a working audio shield.
+T-DSP is an open modular audio platform built around the Teensy microcontroller and the [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html). This board is the balanced-I/O front end — a clean 2-in/2-out XLR interface that pairs a TAC5212 codec module with a T-DSP controller over a ribbon cable.
 
 For a full desktop audio development platform with ESP32 UI, MIDI I/O, S/PDIF, RCA I/O, and multi-module TDM expansion, see the [T-DSP Desktop Pro](https://github.com/t-dsp/t-dsp_desktop_pro).
 
